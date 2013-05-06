@@ -1,6 +1,6 @@
 {
   "name": "line-stream",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "simple line parsing string emitting stream. tired of implementing line delimited streams ;)",
   "main": "index.js",
   "scripts": {

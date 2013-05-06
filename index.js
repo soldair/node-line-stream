@@ -13,6 +13,7 @@ module.exports = function(transform){
       line = buf.substr(0,i);
       if(line.length){
         if(transform) line = transform(line);
+        if(line === undefined) return;
         this.queue(line);
       }
       buf = buf.substr(i+1);
