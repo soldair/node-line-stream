@@ -1,6 +1,7 @@
 var through = require('through');
 
-module.exports = function(opts){
+module.exports = function(transform){
+  
   var buf = "";
   var s = through(function data(data){
 
@@ -10,7 +11,10 @@ module.exports = function(opts){
 
     while ((i = buf.indexOf("\n",start)) >= 0) {
       line = buf.substr(0,i);
-      if(line.length) this.queue(line);
+      if(line.length){
+        if(transform) line = transform(line);
+        this.queue(line);
+      }
       buf = buf.substr(i+1);
     }
 
