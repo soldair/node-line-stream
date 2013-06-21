@@ -1,6 +1,6 @@
 {
   "name": "line-stream",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "simple line parsing string emitting stream. tired of implementing line delimited streams ;)",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   "readmeFilename": "README.md",
   "gitHead": "599d639b9fad64ba7bb097bc1cda11f7ca3edde0",
   "dependencies": {
-    "through": "~2.2.0"
+    "through": "~2.3.4"
   },
   "devDependencies": {
     "tap": "~0.4.0"
