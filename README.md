@@ -3,11 +3,14 @@ node-line-stream
 
 simple line parsing string emitting stream. tired of implementing line delimited streams ;)
 
+
+i would probably use split by substack.
+
 example
 -------
 
 ```js
-var linestream = require('linstream');
+var linestream = require('line-stream');
 var s = linestream();
 
 s.on('data',function(line){
