@@ -25,20 +25,21 @@ fs.createReadStream(somefile).pipe(s);
 api
 ---
 
-- var linestream = require('line-stream');
+### var linestream = require('line-stream');
   - transform stream (through2)
 
-- linestream(delimiter) || linestream({delimiter:os.EOL,start:0})
+### linestream(delimiter) || linestream({delimiter:os.EOL,start:0})
   - returns transform stream.
   - options
     - delimiter, defaults to os.EOL but can be anything
     - start, defaults to 0. this is an offset applied to the start property of each line's "line.start" property. just helpful.
 
-- stream
-  - properties
-  - events
-    in addition to standard stream events this mpodule also provides
-    - fragment
+### stream
+  - **properties**
+    - stream.fragment, at any time this property contains the fragment of the last incomplete line or an empty buffer.
+  - **events**, 
+    in addition to standard stream events this mpodule also emits
+    - fragment, 
      before end if there is a line fragment in the 
      
 
