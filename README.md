@@ -38,9 +38,9 @@ api
   - **properties**
     - stream.fragment, at any time this property contains the fragment of the last incomplete line or an empty buffer.
   - **events**, 
-    in addition to standard stream events this mpodule also emits
+    in addition to standard stream events this module also emits
     - fragment, 
-     before end if there is a line fragment in the 
+     emits before end if there is a line fragment in the fragment property.
      
 
 
